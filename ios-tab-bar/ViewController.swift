@@ -56,7 +56,8 @@ class ViewController: UIViewController {
         for item in items {
             var img = UIImage(named: "share")
 //            item.image = resize(image: img!, toSize: CGSize(width: 20, height: 24))
-            item.image = img?.scaleImageToFitSize(size: CGSize(width: 20, height: 24))
+            item.image = img?.scaleImageToFitSize(size: CGSize(width: 18, height: 18))
+            item.badgeValue = "1"
         }
         
         tabBarVC.modalPresentationStyle = .fullScreen
